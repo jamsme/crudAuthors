@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Authors</title>
+</head>
+<body>
+  <a [routerLink]="['/']">Home</a>
+  <h3>Edit this auothor</h3>
+  <form (submit)="submitEdit()">
+    <input type="text" name="editTask.name" [(ngModel)]="editAuthor.name">
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

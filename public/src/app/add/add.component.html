@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Authors</title>
+</head>
+<body>
+  <a [routerLink]="['/']">Home</a>
+  <h4>{{ newAuthor.name.message }}</h4>
+  <h3>Add a new author:</h3>
+  <div id="box">
+  <form (submit)="submitAuthor()">
+    <h4>Name:</h4>
+    <input type="text" name="name" [(ngModel)]="newAuthor.name">
+    <input type="submit" value="Submit">
+  </form>
+  </div>
+</body>
+</html>
